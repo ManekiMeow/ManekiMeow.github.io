@@ -8,7 +8,10 @@
 /* Basic                                                                         */
 /*********************************************************************************/
 
-@import url(https://fonts.googleapis.com/css?family=Raleway)
+@font-face {
+  font-family: "Raleway";
+  src: url('Raleway-VariableFont_wght.ttf');
+}
 
 	body {
 		margin: 0px;
