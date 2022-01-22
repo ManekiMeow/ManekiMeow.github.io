@@ -1,0 +1,350 @@
+/*
+	Autonomy by TEMPLATED
+    templated.co @templatedco
+    Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+*/
+
+/*********************************************************************************/
+/* Basic                                                                         */
+/*********************************************************************************/
+
+	body {
+		margin: 0px;
+		padding: 0px;
+		font-family: 'Raleway', sans-serif;
+		font-size: 13pt;
+		color: #1B294B;
+		background: #fff;
+	}
+
+	h1, h2, h3 {
+		margin: 0px;
+		padding: 0px;
+	}
+
+	h2 {
+		padding: 0px 0px 20px 0px;
+		letter-spacing: -1px;
+		font-size: 1.8em;
+		color: #1F4788;
+	}
+
+	h3 {
+		padding: 0px 0px 20px 0px;
+		letter-spacing: -1px;
+		font-size: 1.4em;
+		color: #1F4788;
+	}
+
+	p, ol, ul {
+		margin-top: 0px;
+		line-height: 160%;
+		list-style: none;
+	}
+
+	p {
+		margin-bottom: 2em;
+		line-height: 160%;
+	}
+
+
+	strong {
+		font-weight: 700;
+	}
+
+	a
+	{
+		color: #1F4788;
+	}
+
+	a:visited
+	{
+		color: #5D3F6A;
+	}
+
+	a:hover
+	{
+		color: #71A4D9;
+		text-decoration: none;
+	}
+
+		/* Images */
+
+			.image
+			{
+				display: inline-block;
+			}
+			
+				.image img
+				{
+					display: block;
+					width: 100%;
+				}
+
+				.image.featured
+				{
+					display: block;
+					width: 100%;
+					margin: 0 0 2em 0;
+				}
+				
+				.image.full
+				{
+					display: block;
+					width: 100%;
+					margin-bottom: 2em;
+				}
+				
+				.image.left
+				{
+					float: left;
+					margin: 0 2em 2em 0;
+				}
+				
+				.image.centered
+				{
+					display: block;
+					margin: 0 0 2em 0;
+				}
+
+					.image.centered img
+					{
+						margin: 0 auto;
+						width: auto;
+					}
+
+		header
+		{
+			margin-bottom: 1em;
+		}
+			
+			header h2
+			{
+				font-weight: 600;
+			}
+		
+			header .byline
+			{
+				display: block;
+				margin: 0.5em 0 0 0;
+				padding: 0 0 0.5em 0;
+			}
+
+		ul.style
+		{
+		}
+		
+		ul.style li
+		{
+			padding: 0.55em 0em;
+		}
+		
+		ul.style li:first-child
+		{
+		}
+		
+		ul.style a
+		{
+		}
+
+		ul.style1
+		{
+		}
+		
+		ul.style1 li
+		{
+			padding: 0.55em 0em;
+		}
+		
+		ul.style1 li:first-child
+		{
+		}
+		
+		ul.style1 a
+		{
+			color: #774535 !important;
+		}
+
+		ul.style1 img
+		{
+			float: left;
+			margin-right: 1em;
+		}
+	
+/*********************************************************************************/
+/* Header                                                                        */
+/*********************************************************************************/
+
+	#header
+	{
+		background-color: #000000;
+		background-size: cover;
+	}
+
+		#header .container
+		{
+			padding: 6em 0em;
+		}
+
+/*********************************************************************************/
+/* Logo                                                                          */
+/*********************************************************************************/
+
+	#logo
+	{
+		position: absolute;
+		left: 0em;
+		top: 4.5em;
+	}
+	
+		#logo h1
+		{
+			color: #EEBBCB;
+		}
+	
+		#logo a
+		{
+			display: block;
+			text-decoration: none;
+			font-size: 2.8em;
+			font-weight: 600;
+			color: #FFF;
+		}
+
+/*********************************************************************************/
+/* Nav                                                                           */
+/*********************************************************************************/
+
+	#nav
+	{
+		position: absolute;
+		right: 0em;
+		top: 5em;
+	}
+
+		#nav > ul > li
+		{
+			float: left;
+		}
+		
+			#nav > ul > li:last-child
+			{
+				padding-right: 0;
+			}
+
+			#nav > ul > li > a,
+			#nav > ul > li > span
+			{
+				display: block;
+				margin-left: 0.7em;
+				padding: 0.80em 1.2em;
+				letter-spacing: 0.06em;
+				text-decoration: none;
+				font-size: 1em;
+				outline: 0;
+				color: #fff;
+			}
+			#nav > ul > li > p
+			{
+				display: block;
+				margin-left: 0.7em;
+				padding: 0.80em 1.2em;
+				letter-spacing: 0.06em;
+				text-decoration: none;
+				font-size: 1em;
+				outline: 0;
+				color: #aaa;
+			}
+
+			#nav li.active a
+			{
+				background: #56c9d6;
+				border-radius: 5px;
+				color: #FFF;
+			}
+
+			#nav > ul > li > ul
+			{
+				display: none;
+			}
+
+/*********************************************************************************/
+/* Banner                                                                        */
+/*********************************************************************************/
+
+	#banner
+	{
+		background-image: url(../images/banner.jpg);	
+    	background-attachment: fixed;
+    	background-size: 100vw;
+	}
+	
+	.homepage #banner
+	{
+    	background-repeat: no-repeat;
+    	background-position: top;
+	}
+
+/*********************************************************************************/
+/* Main                                                                          */
+/*********************************************************************************/
+
+	#main
+	{
+		position: relative;
+		padding: 6em 0em;
+	}
+
+
+/*********************************************************************************/
+/* Featured                                                                      */
+/*********************************************************************************/
+
+	#featured
+	{
+		position: relative;
+		padding: 6em 0em 4em 0em;
+	}
+
+	#featured p
+	{
+		text-indent: 2em
+	}
+
+/*********************************************************************************/
+/* graphics                                                                     */
+/*********************************************************************************/
+
+	#graphics
+	{
+		position: relative;
+		padding: 6em 0em;
+	}
+	
+/*********************************************************************************/
+/* Copyright                                                                     */
+/*********************************************************************************/
+	
+	#copyright
+	{
+		position: relative;
+		padding: 3em 0em;
+		text-align: center;
+		color: #EEBBCB;
+		background: #000000;
+	}
+	
+	#copyright .container
+	{
+	}
+	
+	#copyright a
+	{
+		color: #CBD6F7;
+	}
+
+	#copyright a:hover
+	{
+		text-decoration: none;
+		color: #CBD6F7;
+	}
