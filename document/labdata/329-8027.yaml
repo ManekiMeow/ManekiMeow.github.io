@@ -1,0 +1,57 @@
+# ZHLIU New Clash Config File for ClashforWindows 0.15.1
+# Tue Mar 30 2021 06:13:17 GMT+0000 (UTC)
+
+# port of HTTP
+port: 7890
+
+# port of SOCKS5
+socks-port: 7891
+
+allow-lan: true
+
+# Rule / Global/ DIRECT (default is Rule)
+mode: Rule
+
+# set log level to stdout (default is info)
+# info / warning / error / debug
+log-level: info
+
+# A RESTful API for clash
+external-controller: 127.0.0.1:9090
+
+# Secret for RESTful API (Optional)
+secret: ""
+
+
+dns:
+  enable: false # set true to enable dns (default is false)
+  listen: 127.0.0.1:53
+  nameserver:
+     - 119.29.29.29
+     - 114.114.114.114
+  fallback: # concurrent request with nameserver, fallback used when GEOIP country isn't CN
+     - tls://1.0.0.1:853
+     - tls://dns.google:853
+
+
+proxies:
+  - name: "329"
+    type: ss
+    server: 222.195.83.76
+    port: 8027
+    cipher: aes-256-cfb
+    password: "afafs009"
+
+proxy-groups:
+  - name: Meow
+    type: "url-test"
+    url: "http://www.gstatic.cn/generate_204"
+    interval: 300
+    tolerance: 30
+    proxies:
+        - 329
+
+rules:
+
+- MATCH, Meow
+
